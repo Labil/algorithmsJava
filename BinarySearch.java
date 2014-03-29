@@ -52,6 +52,26 @@ public class BinarySearch
 	//First compile java program in command line
 	javac BinarySearch.java --> creates a BinarySearch.class
 	//then
-	java BinarySearch largeW.txt < largeT.txt
+	java BinarySearch numbers1.txt < numbers2.txt
+	//The numbers1 & 2 are whiles with some numbers in them. The program checks whether
+	//the numbers in numbers2 are in the numbers1.txt file and prints out the ones that aren't
+
+	This is a process called whitelisting. Imagine a credit card company that needs to
+	check whether customer transactions are for a valid account. To do so, they can
+	- Keep customers account numbers in a file, which we refer to as a whitelist
+	- Produce the account number associated with each trasaction in the standard input stream
+	- Use the test client to put onto standard output the numbers that are NOT associated with any
+		customer, and refuse them.
+
+	On the booksite, under the data tab, there are two files, largeW.txt (1 mill ints) and
+	largeT.txt (10 million ints). (Ok, i didn't find them...) Here just a working program would not be sufficient. For 
+	example, a much simpler implementation of rank(), which does not even require the array to be 
+	sorted, is to check every entry
+	- the computer is too slow to run this brute-force implementation of rank() for large
+	number of inputs. Solving the whitelist problem for a large number of inputs is not
+	feasible without efficient algorithms such as binary search and mergesort
+
+	NOTE: to use with the test data, maybe change the program from printing out all the numbers to
+	just recapping how many was not found?
 */
 
