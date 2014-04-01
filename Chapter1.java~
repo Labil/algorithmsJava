@@ -1,0 +1,54 @@
+public class Chapter1{
+    
+    //Make a binary representation of a number N
+    public static String binaryRepPosInt(int N){
+        String s = "";
+        for(int n = N; n > 0; n /= 2)
+            s = (n % 2) + s;
+        
+        System.out.println(s);
+        return s;
+    }
+    
+    /*public static int[][] transpose(int[][] mat){
+        int M = mat.length;
+        int N = mat[0].length;
+        
+        for(int i = 0; i < M; i++){
+            for(int j = 0; j < N; j++){
+                if(i != j){
+                    int temp = mat[i][j];
+                    mat[i][j] = mat[j][i];
+                    mat[j][i] = temp;
+                }
+            }
+        }
+        for(int k = 0; k < M; k++){
+            for(int u = 0; u < N; u++){
+                StdOut.println(mat[k][u]);
+            }
+            StdOut.printf("\n");
+        }
+        
+        return mat;
+    }*/
+    public static void main(String[] args){
+        
+        //int[][] mat = new int[3][3];
+       /* for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                mat[i][j] = 3;
+            }
+        }*/
+        
+        //int num = Integer.parseInt(args[0]);
+        //binaryRepPosInt(num);
+        
+        /*for(int k = 0; k < 3; k++){
+            for(int u = 0; u < 4; u++){
+                StdOut.println(mat[k][u]);
+            }
+            StdOut.printf("\n");
+        }*/
+    }
+}

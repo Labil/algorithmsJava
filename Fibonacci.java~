@@ -1,0 +1,18 @@
+public class Fibonacci{
+   
+    //Fibonacci
+    public static long fib(int N){
+        if(N == 0) return 0;
+        if(N == 1) return 1;
+        return fib(N-1) + fib(N-2);
+    }
+    
+    
+    public static void main(String[] args){
+        
+        for(int N = 0; N < 100; N++){
+            StdOut.println(N + " " + fib(N));
+        }
+        
+    }
+}
